@@ -13,8 +13,8 @@ const Contact = () => {
           <div className="info-block">
             <i className="fas fa-phone"></i>
             <div>
-              <p>+123-3456-7891</p>
-              <p>+123-3456-7892</p>
+              <p>+387 66 113 007</p>
+              <p>+387 51 228 900</p>
             </div>
           </div>
           <div className="info-block">
@@ -26,7 +26,7 @@ const Contact = () => {
           </div>
           <div className="info-block">
             <i className="fas fa-map-marker-alt"></i>
-            <p>121 King Street, Melbourne, United States</p>
+            <p>Ive Andrica 47, Banja Luka BIH</p>
           </div>
         </div>
 

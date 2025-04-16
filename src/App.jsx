@@ -1,9 +1,11 @@
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+
 import Navbar from './components/Navbar';
 import Home from './components/Home';
 import About from './components/About';
 import Works from './components/Works'; 
 import Contact from './components/Contact';
+import '@fortawesome/fontawesome-free/css/all.min.css';
 
 function App() {
   return (
