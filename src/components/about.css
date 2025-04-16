@@ -1,0 +1,88 @@
+.about-section {
+    padding: 60px 20px;
+    background: #0f172a;
+    color: white;
+    text-align: center;
+  }
+  
+  .section-title {
+    font-size: 36px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    position: relative;
+  }
+  
+  .section-title::after {
+    content: "ABOUT";
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 80px;
+    color: rgba(255, 255, 255, 0.05);
+    z-index: -1;
+  }
+  
+  .about-content {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 50px;
+    flex-wrap: wrap;
+    max-width: 1000px;
+    margin: 0 auto;
+    text-align: left;
+  }
+  
+  .about-left img {
+    width: 350px;
+    border-radius: 10px;
+    box-shadow: 0 0 20px rgba(0, 255, 0, 0.2);
+  }
+  
+  .about-right {
+    max-width: 500px;
+  }
+  
+  .about-right h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .about-right h3 span {
+    color: #4ade80; /* green-400 */
+  }
+  
+  .about-right ul {
+    list-style: none;
+    padding: 0;
+    margin-bottom: 30px;
+  }
+  
+  .about-right li {
+    margin-bottom: 10px;
+    font-size: 16px;
+  }
+  
+  .about-right li span {
+    font-weight: bold;
+    color: #4ade80;
+    display: inline-block;
+    width: 120px;
+  }
+  
+  .resume-btn {
+    padding: 10px 20px;
+    background-color: #4ade80;
+    color: black;
+    border: none;
+    border-radius: 4px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background 0.3s ease;
+  }
+  
+  .resume-btn:hover {
+    background-color: #22c55e;
+  }
+  
