@@ -20,8 +20,8 @@ const Contact = () => {
           <div className="info-block">
             <i className="fas fa-envelope"></i>
             <div>
-              <p>demoemail@demo.com</p>
-              <p>demo02@demo.com</p>
+              <p>Bojan.Vukojevic@demo.com</p>
+              <p>Bojan.Vukojevic@demo.com</p>
             </div>
           </div>
           <div className="info-block">
