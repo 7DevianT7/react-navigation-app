@@ -1,61 +1,129 @@
 body {
-    margin: 0;
-    padding: 0;
-    background-color: #0f172a; /* tamna pozadina */
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #0f172a; /* tamna pozadina */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.home {
+  text-align: center;
+  padding-top: 80px;
+  color: #cbd5e1; /* svetla siva */
+}
+
+.profile-image {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 4px solid #4ade80; /* zelena */
+  object-fit: cover;
+  margin-bottom: 20px;
+}
+
+h1 {
+  color: white;
+  font-size: 40px;
+}
+
+h1 span {
+  color: #4ade80; /* zelena */
+}
+
+p {
+  font-size: 16px;
+  color: #94a3b8; /* svetlija siva */
+  max-width: 600px;
+  margin: 20px auto;
+  line-height: 1.6;
+}
+
+.social-icons {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+
+.social-icons a {
+  background-color: #1e293b; /* tamnoplava pozadina ikonice */
+  padding: 10px;
+  border-radius: 6px;
+  color: white;
+  font-size: 18px;
+  transition: 0.3s ease;
+  text-decoration: none;
+}
+
+.social-icons a:hover {
+  background-color: #4ade80; /* hover efekat zelene boje */
+  color: black;
+}
+
+@keyframes pulse {
+  0% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(74, 222, 128, 0.7);
   }
-  
-  .home {
-    text-align: center;
-    padding-top: 80px;
-    color: #cbd5e1; /* svetla siva */
+  70% {
+    transform: scale(1.05);
+    box-shadow: 0 0 0 20px rgba(74, 222, 128, 0);
   }
-  
-  .profile-image {
-    width: 150px;
-    height: 150px;
-    border-radius: 50%;
-    border: 4px solid #4ade80; /* zelena */
-    object-fit: cover;
-    margin-bottom: 20px;
+  100% {
+    transform: scale(1);
+    box-shadow: 0 0 0 0 rgba(74, 222, 128, 0);
   }
-  
-  h1 {
-    color: white;
-    font-size: 40px;
-  }
-  
-  h1 span {
-    color: #4ade80; /* zelena */
-  }
-  
-  p {
-    font-size: 16px;
-    color: #94a3b8; /* svetlija siva */
-    max-width: 600px;
-    margin: 20px auto;
-    line-height: 1.6;
-  }
-  
-  .social-icons {
-    margin-top: 30px;
-    display: flex;
-    justify-content: center;
-    gap: 20px;
-  }
-  
-  .social-icons a {
-    background-color: #1e293b; /* tamnoplava pozadina ikonice */
-    padding: 10px;
-    border-radius: 6px;
-    color: white;
-    font-size: 18px;
-    transition: 0.3s ease;
-    text-decoration: none;
-  }
-  
-  .social-icons a:hover {
-    background-color: #4ade80; /* hover efekat zelene boje */
-    color: black;
-  }
-  
+}
+
+.profile-image {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 4px solid #4ade80;
+  object-fit: cover;
+  margin-bottom: 20px;
+  animation: pulse 2s infinite;
+}
+
+
+
+
+/* Mobilni telefoni */
+@media (max-width: 768px) {
+.profile-image {
+  width: 120px;
+  height: 120px;
+}
+
+h1 {
+  font-size: 28px;
+}
+
+p {
+  font-size: 14px;
+  padding: 0 20px;
+}
+
+.social-icons {
+  gap: 15px;
+}
+}
+
+/* Tableti */
+@media (min-width: 769px) and (max-width: 1024px) {
+.profile-image {
+  width: 140px;
+  height: 140px;
+}
+
+h1 {
+  font-size: 32px;
+}
+
+p {
+  font-size: 15px;
+}
+
+.social-icons {
+  gap: 18px;
+}
+}

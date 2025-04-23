@@ -22,7 +22,9 @@ const About = () => {
             <li><span>Address:</span> 121 I.Andrića, Banja Luka, Bosnia</li>
             <li><span>Freelance:</span> Available</li>
           </ul>
-          <button className="resume-btn">DOWNLOAD RESUME</button>
+          <a href="/cv.pdf" download>
+            <button className="resume-btn">DOWNLOAD RESUME</button>
+          </a>
         </div>
       </div>
     </div>
