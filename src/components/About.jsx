@@ -41,7 +41,7 @@ const About = () => {
           <a href="/react-navigation-app/cv.pdf" download>
             <button className="resume-btn">DOWNLOAD RESUME</button>
           </a>
-        </div>
+        </div>np
       </div>
     </div>
   );
