@@ -1,36 +1,92 @@
 .navbar {
-    width: 100vw;
-    padding: 20px 40px;
-    background-color: #0f172a;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-    box-sizing: border-box;
-  }
-  
-  .navbar-logo {
-    font-size: 24px;
-    font-weight: bold;
-    color: #4ade80;
-  }
-  
+  width: 100%;
+  padding: 20px 40px;  
+  display: flex;
+  justify-content: space-between;  
+  align-items: center;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  box-sizing: border-box;
+}
+
+.navbar-logo {
+  font-size: 20px;
+  font-weight: bold;
+  color: #4ade80;
+}
+
+.navbar-links {
+  display: flex;
+  gap: 30px;
+}
+
+.navbar-links a {
+  text-decoration: none;
+  color: #e2e8f0;
+  font-weight: 500;
+  font-size: 16px;
+  transition: color 0.3s;
+}
+
+.navbar-links a:hover {
+  color: #4ade80;
+}
+
+.burger {
+  display: none;
+  cursor: pointer;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 25px;
+  height: 20px;
+}
+
+.burger .line {
+  height: 3px;
+  background: #4ade80;
+  border-radius: 2px;
+}
+
+@media (max-width: 768px) {
   .navbar-links {
+    position: absolute;
+    top: 70px;
+    right: 20px;
+    background: #0f172a;
+    flex-direction: column;
+    gap: 20px;
+    padding: 15px;
+    border: 1px solid #4ade80;
+    border-radius: 8px;
+    display: none;
+    min-width: 150px;
+  }
+
+  .navbar-links.active {
     display: flex;
-    gap: 40px; /* veći gap između linkova */
   }
-  
+
+  .burger {
+    display: flex;
+  }
+}
+
+@media (max-width: 360px) {
   .navbar-links a {
-    text-decoration: none;
-    color: #e2e8f0;
-    font-weight: 500;
+    font-size: 14px;
+  }
+
+  .navbar-logo {
     font-size: 18px;
-    transition: color 0.3s;
   }
-  
-  .navbar-links a:hover {
-    color: #4ade80;
+
+  .burger {
+    width: 22px;
+    height: 18px;
   }
-  
+
+  .burger .line {
+    height: 2px;
+  }
+}

@@ -1,11 +1,12 @@
 import React from "react";
+import profileImg from "../assets/profile.png";
 import "./Home.css";
 import { FaFacebookF, FaTwitter, FaGithub, FaLinkedin } from "react-icons/fa";
 
 const Home = () => {
   return (
     <div className="home">
-      <img src="profile.png" alt="Profile" className="profile-image" />
+      <img src={profileImg} alt="Profile" className="profile-image" />
       <h1>
         Hi, I am <span>Bojan Vukojevic</span>
       </h1>
