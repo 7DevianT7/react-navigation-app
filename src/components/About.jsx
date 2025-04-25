@@ -38,7 +38,7 @@ const About = () => {
               <span>Freelance:</span> Available
             </li>
           </ul>
-          <a href="/react-navigation-app/cv.pdf" download>
+          <a href="/cv.pdf" download>
             <button className="resume-btn">DOWNLOAD RESUME</button>
           </a>
         </div>np
