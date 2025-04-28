@@ -72,3 +72,32 @@
     color: #cbd5e1;
   }
   
+  /* Animacija za klik na filter dugme */
+@keyframes bounceAnimation {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+}
+
+.bounce {
+  animation: bounceAnimation 0.4s;
+}
+
+/* Animacija za ulazak radova */
+@keyframes fadeInAnimation {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.fade-in {
+  animation: fadeInAnimation 0.6s ease forwards;
+}

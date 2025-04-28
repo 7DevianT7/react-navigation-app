@@ -41,7 +41,7 @@ const About = () => {
           <a href="/cv.pdf" download>
             <button className="resume-btn">DOWNLOAD RESUME</button>
           </a>
-        </div>np
+        </div>
       </div>
     </div>
   );

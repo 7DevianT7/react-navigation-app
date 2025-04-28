@@ -1,15 +1,17 @@
 {
   "name": "my-app",
+  "homepage": "https://7deviant7.github.io/react-navigation-app/",
   "private": true,
   "version": "0.0.0",
   "type": "module",
-  "homepage": "https://7DevianT7.github.io/react-navigation-app",
+
   "scripts": {
     "dev": "vite",
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview",
     "deploy": "gh-pages -d dist"
+    
   },
   "dependencies": {
     "@fortawesome/fontawesome-free": "^6.7.2",
